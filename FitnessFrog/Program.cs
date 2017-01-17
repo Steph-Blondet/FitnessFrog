@@ -1,10 +1,20 @@
-class Program
+using System; //declaring it here so we can stop writing "System" everytime.
+
+namespace Treehouse.Fitness.Frog
+
 {
-    static void Main()
+    class Program
     {
-        // Prompt the user for minutes exercised
-        // Add minutes exercised to total
-        // Display total minutes exercised to the screen
-        // Repeat until the user quits
+        static void Main()
+        {
+            // Prompt the user for minutes exercised
+            Console.Write("Enter how many minutes you exercised: ");
+
+            string entry = Console.ReadLine();
+
+            // Add minutes exercised to total
+            // Display total minutes exercised to the screen
+            // Repeat until the user quits
+        }
     }
 }
