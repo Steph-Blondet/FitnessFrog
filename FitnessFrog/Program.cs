@@ -7,20 +7,24 @@ namespace Treehouse.Fitness.Frog
         static void Main()
         {
             int runningTotal = 0;
+            bool keepGoing = true;
 
-            // Prompt the user for minutes exercised
-            Console.Write("Enter how many minutes you exercised: ");
+            while(keepGoing)
+            {
+                // Prompt the user for minutes exercised
+                Console.Write("Enter how many minutes you exercised: ");
 
-            string entry = Console.ReadLine();
+                string entry = Console.ReadLine();
 
-            int minutes = int.Parse(entry);
+                int minutes = int.Parse(entry);
 
-            // Add minutes exercised to total
-            runningTotal = runningTotal + minutes;
+                // Add minutes exercised to total
+                runningTotal = runningTotal + minutes;
 
-            // Display total minutes exercised to the screen
-            Console.WriteLine("You've entered " + runningTotal + " minutes");
-            // Repeat until the user quits
+                // Display total minutes exercised to the screen
+                Console.WriteLine("You've entered " + runningTotal + " minutes");
+                // Repeat until the user quits
+            }
         }
     }
 }
