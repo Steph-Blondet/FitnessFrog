@@ -14,6 +14,7 @@ namespace Treehouse.Fitness.Frog
 
             // Add minutes exercised to total
             // Display total minutes exercised to the screen
+            Console.WriteLine("You've entered " + entry + " minutes");
             // Repeat until the user quits
         }
     }
