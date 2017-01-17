@@ -12,18 +12,25 @@ namespace Treehouse.Fitness.Frog
             while(keepGoing)
             {
                 // Prompt the user for minutes exercised
-                Console.Write("Enter how many minutes you exercised: ");
-
+                Console.Write("Enter how many minutes you exercised or type \"quit\" to exit: ");
                 string entry = Console.ReadLine();
 
-                int minutes = int.Parse(entry);
+                if(entry == "quit")
+                {
+                    keepGoing = false;
+                }
+                else
+                {
+                    int minutes = int.Parse(entry);
 
-                // Add minutes exercised to total
-                runningTotal = runningTotal + minutes;
+                    // Add minutes exercised to total
+                    runningTotal = runningTotal + minutes;
 
-                // Display total minutes exercised to the screen
-                Console.WriteLine("You've entered " + runningTotal + " minutes");
+                    // Display total minutes exercised to the screen
+                    Console.WriteLine("You've entered " + runningTotal + " minutes");
+                }
                 // Repeat until the user quits
+                Console.WriteLine("Goodbye");
             }
         }
     }
