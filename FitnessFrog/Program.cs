@@ -24,7 +24,12 @@ namespace Treehouse.Fitness.Frog
                 {
                     int minutes = int.Parse(entry);
 
-                    if(minutes <= 10)
+                    if(minutes <= 0)
+                    {
+                        Console.WriteLine(minutes + " is not an acceptable value.");
+                        continue;
+                    }
+                    else if(minutes <= 10)
                     {
                         Console.WriteLine("Better than nothing, am I right?");
                     }
